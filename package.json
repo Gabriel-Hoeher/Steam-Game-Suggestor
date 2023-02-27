@@ -1,0 +1,29 @@
+{
+  "name": "majorgroupproject-the-b-team",
+  "version": "1.0.0",
+  "description": "steam-games-search-engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSCI3230U/majorgroupproject-the-b-team.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSCI3230U/majorgroupproject-the-b-team/issues"
+  },
+  "homepage": "https://github.com/CSCI3230U/majorgroupproject-the-b-team#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "html": "^1.0.0",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.5.3",
+    "mongoose": "^5.12.3",
+    "moongoose": "0.0.5",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,133 @@
+#nav .navbar-brand{
+    display: block;
+    margin: 3rem;
+    margin-left: 15rem !important;
+    font-size: 170%;
+    
+}
+
+html {background-color: rgb(45, 45, 45) !important;}
+
+#nav {background-color: rgb(45, 45, 45) !important;}
+
+.imageContainer{
+    background-color: rgb(79, 79, 79);
+    margin-top: 12rem;
+    margin-left: 15rem;
+    padding-bottom: 18rem;
+    margin-right: 2.5rem;
+    color: rgb(180, 180, 180) !important;
+}
+
+.dropdown-trigger {margin-right: 4rem;}
+
+.dropdown{
+    margin-right: 4rem;
+    float:right;
+}
+
+.button{
+    background-color: rgb(79, 79, 79) !important;
+    color: rgb(180, 180, 180)  !important;
+    transform: translate(-0%,105%);
+    position: absolute;
+}
+
+.dropdown-item{
+    background-color: rgb(79, 79, 79) !important;
+    color: rgb(180, 180, 180)  !important;
+    transform: translate(-0%,120%);
+}
+
+.dropdown-item:hover{
+    background-color: #ff0066 !important;
+    color: black !important;
+}
+
+#container {margin: 3rem;}
+
+#nav h1{
+    font-weight: 600;
+    font-size: 120%;
+    color: rgb(180, 180, 180);
+    font-family:sans-serif;
+}
+
+#nav h2{
+    color: white;
+    color: rgb(180, 180, 180);
+    font-family:sans-serif;
+}
+
+.headerSearch{
+    margin-left: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(180, 180, 180);
+}
+
+.search-box {
+    background: rgb(79, 79, 79);
+    height: 40px;
+    border-radius: 60px;
+    width: 200px;
+    padding-left: 20px;
+    color: rgb(180, 180, 180) !important;
+}
+
+.searchBarContainer{
+        position: absolute;
+        height: 60px;
+}
+
+.search-btn {
+    color: rgb(195, 195, 195);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(237, 28, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 300px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+td.isHighlighted{
+    background-color: rgb(145, 138, 138);
+    border-radius: 10px;
+}
+  
+td:hover {background-color: rgb(145, 138, 138);}
+
+.genreContainer {text-align: center;}
+
+td { 
+    color: rgb(195, 195, 195);
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    /* font-size: 20px; */
+    vertical-align: middle!important;
+    text-align: center;
+}
+
+.defaultImageContainer {
+    width: 200px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.imageText {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

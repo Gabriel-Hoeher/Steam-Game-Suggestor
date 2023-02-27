@@ -1,0 +1,87 @@
+/* Sets the background */
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: larger;
+    overflow: auto;
+}
+
+/* Assigns the basic values to the html */
+html, body {height: 100%;}
+
+/* Used for the logo, sets an appropriate size */
+#logo{
+    left:0px;
+    width: 300px;
+}
+
+/* Used for the header image of the game */
+.gameImg{
+    margin:auto;
+    height: 15rem;
+    margin-left: 25rem;
+    text-align: center;
+    top: 0px
+}
+
+/* Used for the ratings graph for positive - negative ratio */
+#graph{
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+
+/* Used as a template for the text displayed for the game */
+.info {
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Used as the button to redirect to the steam store page */
+.button{
+    margin-top: 1rem;
+    background-color: rgb(31, 143, 204) !important;
+    border-color: rgb(31, 143, 204) !important;
+    color: aliceblue;
+}
+
+/* Used to format the images along the top */
+.header{
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Title of the game */
+.Title{
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+/* A container to hold the description that allowed for better formatting */
+.descriptionContainer{
+    margin-top: 3rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
+}
+
+/* formatting for the card images along the bottom of the page */
+img.cardImg {
+    height: 300px;
+    margin-right: 15px;
+}
+
+/* formats for the Recommended games */
+div#recGames {
+    margin-top: 2.5rem;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+/* template for formatting text for similar games */
+.similarGames{
+    margin-top: 2rem;
+    font-size: larger;
+    font-weight: 600;
+}

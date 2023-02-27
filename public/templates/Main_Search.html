@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(12, 12, 12);">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Final Html Test</title>
+    <link rel="stylesheet" href="../styles/Main_Search.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script language="JavaScript" type="module" src="../scripts/gamesearch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.min.js" integrity="sha512-C2RveGuPIWqkaLAluvoxyiaN1XYNe5ss11urhZWZYBUA9Ydgj+hfGKPcxCzTwut1/fmjEZR7Ac35f2aycT8Ogw==" crossorigin="anonymous"></script>
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="../images/icon.jpg" alt="main icon" id="icon">
+    <h1>Steam Search</h1>
+  </header>
+  <form action="/search" method="GET">
+    <div class="search-box">
+      <button id="type-button" name="typeButton" class="dropbtn" href="#" type="button">
+      </button>
+      <input id='search-txt' name='value' class="search-txt" type="text" placeholder="Search Steam ID..." autocomplete="off">
+      <button id='submit-button' class="search-btn" href="#" type="submit">
+        <i class="fas fa-search"></i>
+      </button> 
+      <br>
+      <br>
+      <br>
+      <div class="dropdown">
+        <div id="typedown" class="dropdown-content">
+          <a id="steamID" href="#"><i class="fab fa-steam-symbol fa-2x"></i> &nbsp Steam ID</a>
+          <a id="gameName" href="#"><i class="fas fa-gamepad fa-2x"></i>&nbsp Game</a>
+          <a id="genre" href="#"><i class="fas fa-crosshairs fa-2x"></i>&nbsp Genre</a>
+        </div>
+      </div>
+    </div>
+    <input id="dropval" name="type" value="steamID" hidden>
+  <form>
+
+  <div id="genreContainer" class="genreContainer">
+    <table id="genreTable" class="genreTable"></table>
+  </div>
+</body>
+</html>

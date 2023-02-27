@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css")
+        link(rel="stylesheet", href="styles/Game.css", content="application/css; charset=utf-8")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.min.js" integrity="sha512-C2RveGuPIWqkaLAluvoxyiaN1XYNe5ss11urhZWZYBUA9Ydgj+hfGKPcxCzTwut1/fmjEZR7Ac35f2aycT8Ogw==" crossorigin="anonymous")
+        script(language="JavaScript" type="module" src="scripts/game.js")
+        script(language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js")
+        title Game_List
+    
+block content
+    //- Sets the ratings graph
+    table(id="graph" class="graph")
+    //- header container for images along the top
+    div(id='header')
+        //- Table to allow formatting and use of the href
+        table()
+            //- Sets the logo image and the link for when it is clicked
+            td(id="logoTableData" href="/")
+                a(href="/")
+                    img(id="logo" src="images/icon.jpg" )
+            
+            //- Sets the image header for the game
+            td()
+                div(id="gameImg" class="gameImg")
+
+    //- Outputs the information on the game
+    div(class='info')
+        //- Information from title to ratings
+        p(class="Title")=name
+        p(class="id" id='ID' hidden=true)= id
+        p(class="Tags")="Tags: "+ tags
+        p(class="date")="Released: " + date
+        p(id="ratingData" hidden=true)=score
+        p(id="rating" class="rating")="Rating: " + score
+        a(href="https://store.steampowered.com/app/"+id+"/")
+            button(id="price" class="button")= price
+
+        //- A container thats hold s the description of the game
+        div(class="descriptionContainer")
+            p(class="header")="Description"
+            p(class="description" id='description')= description
+
+        //- Recommends similar games
+        h1(class="similarGames")="Similar games:"     
+    div(id='recGames')
+        each game in recGames
+            a(href=`/game?id=${game}`)
+                img(class="cardImg" src=`https://steamcdn-a.akamaihd.net/steam/apps/${game}/library_600x900_2x.jpg` alt="Card Image" onerror=`this.onerror = null; this.src='images/Steam_Not_Found.jpg'`)
+
